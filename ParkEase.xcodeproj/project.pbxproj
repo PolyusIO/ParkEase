@@ -13,6 +13,7 @@
 		8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972A29F6DCB1000DE44C /* Main.storyboard */; };
 		8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972D29F6DCB2000DE44C /* Assets.xcassets */; };
 		8B8F973129F6DCB2000DE44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */; };
+		8B8F973E29F6DDA6000DE44C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F973D29F6DDA6000DE44C /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8B8F972D29F6DCB2000DE44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B8F973029F6DCB2000DE44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8F973229F6DCB2000DE44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8F973D29F6DDA6000DE44C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		8B8F972329F6DCB1000DE44C /* ParkEase */ = {
 			isa = PBXGroup;
 			children = (
-				8B8F972429F6DCB1000DE44C /* AppDelegate.swift */,
-				8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */,
-				8B8F972829F6DCB1000DE44C /* ViewController.swift */,
-				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
-				8B8F972D29F6DCB2000DE44C /* Assets.xcassets */,
-				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
-				8B8F973229F6DCB2000DE44C /* Info.plist */,
+				8B8F973C29F6DD73000DE44C /* Models */,
+				8B8F973829F6DCF9000DE44C /* App */,
+				8B8F973929F6DD3C000DE44C /* Viewcontrollers */,
+				8B8F973A29F6DD51000DE44C /* Storyboards */,
+				8B8F973B29F6DD61000DE44C /* Resource */,
 			);
 			path = ParkEase;
+			sourceTree = "<group>";
+		};
+		8B8F973829F6DCF9000DE44C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F972429F6DCB1000DE44C /* AppDelegate.swift */,
+				8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */,
+				8B8F973229F6DCB2000DE44C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8B8F973929F6DD3C000DE44C /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F972829F6DCB1000DE44C /* ViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		8B8F973A29F6DD51000DE44C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
+				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8B8F973B29F6DD61000DE44C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F972D29F6DCB2000DE44C /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8B8F973C29F6DD73000DE44C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F973D29F6DDA6000DE44C /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +184,7 @@
 				8B8F972929F6DCB1000DE44C /* ViewController.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
 				8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */,
+				8B8F973E29F6DDA6000DE44C /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +333,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5JLFFB6Q5M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ParkEase/Info.plist;
+				INFOPLIST_FILE = ParkEase/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = polyus.ParkEase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +364,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5JLFFB6Q5M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ParkEase/Info.plist;
+				INFOPLIST_FILE = ParkEase/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = polyus.ParkEase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
