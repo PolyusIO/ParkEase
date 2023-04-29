@@ -5,8 +5,6 @@
 //  Created by Сергей Поляков on 24.04.2023.
 //
 
-import Foundation
-
 struct Car {
     let model: String
     let serie: String

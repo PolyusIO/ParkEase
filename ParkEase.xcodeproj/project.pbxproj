@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57EA2DD929FDC4DE001228CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EA2DD829FDC4DE001228CB /* User.swift */; };
 		8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F972429F6DCB1000DE44C /* AppDelegate.swift */; };
 		8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */; };
 		8B8F972929F6DCB1000DE44C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F972829F6DCB1000DE44C /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57EA2DD829FDC4DE001228CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8B8F972129F6DCB1000DE44C /* ParkEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8F972429F6DCB1000DE44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8B8F973D29F6DDA6000DE44C /* Car.swift */,
+				57EA2DD829FDC4DE001228CB /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8B8F972929F6DCB1000DE44C /* ViewController.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
 				8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */,
+				57EA2DD929FDC4DE001228CB /* User.swift in Sources */,
 				8B8F973E29F6DDA6000DE44C /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
