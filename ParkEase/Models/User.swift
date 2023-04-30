@@ -10,13 +10,15 @@ struct User {
     let password: String
     let parkKey: String
     let person: Person
+    let car: [Car]
     
     static func getUserData() -> User {
         User(
             login: "andrey",
-            password: "1",
-            parkKey: "03789",
-            person: Person.getPerson()
+            password: "4",
+            parkKey: "2",
+            person: Person.getPerson(),
+            car: []
         )
     }
 }
@@ -27,6 +29,7 @@ struct Person {
     let surname: String
     let age: Int
     let photo: String
+    let gitGubLink: String
     let bio: String
     
     var fullName: String {
@@ -39,6 +42,7 @@ struct Person {
             surname: "Мачулин",
             age: 38,
             photo: "Andrey",
+            gitGubLink: "GorizontX",
             bio: """
             Привет, меня зовут Андрей. Мне 38 лет, сейчас я живу в Барселоне и учусь на 32 потоке.
             """
