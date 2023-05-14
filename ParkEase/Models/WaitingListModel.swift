@@ -8,6 +8,7 @@
 import Foundation
 
 struct WaitingList {
+    let dispatchTime: DispatchTime
     let operationTime: Int
     let timeToCompletion: Int
     let isYouCar: Bool
