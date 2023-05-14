@@ -23,6 +23,8 @@
 		8BC88F592A10F2F200A45015 /* Team.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F582A10F2F100A45015 /* Team.storyboard */; };
 		8BC88F5D2A10F4EA00A45015 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F5C2A10F4EA00A45015 /* DataStore.swift */; };
 		8BC88F602A10F62E00A45015 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F5F2A10F62E00A45015 /* MainViewController.swift */; };
+		8BC88F632A10F7BD00A45015 /* WaitingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */; };
+		8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F642A10FA0300A45015 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		8BC88F582A10F2F100A45015 /* Team.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Team.storyboard; sourceTree = "<group>"; };
 		8BC88F5C2A10F4EA00A45015 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8BC88F5F2A10F62E00A45015 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaitingList.storyboard; sourceTree = "<group>"; };
+		8BC88F642A10FA0300A45015 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,10 @@
 		8B8F973A29F6DD51000DE44C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
 				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
+				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
 				8BC88F582A10F2F100A45015 /* Team.storyboard */,
+				8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 		8BC88F612A10F6C800A45015 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				8BC88F642A10FA0300A45015 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				8B8F973129F6DCB2000DE44C /* LaunchScreen.storyboard in Resources */,
 				8BC88F592A10F2F200A45015 /* Team.storyboard in Resources */,
 				8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */,
+				8BC88F632A10F7BD00A45015 /* WaitingList.storyboard in Resources */,
 				8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 				8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */,
 				8BC88F572A10F2AC00A45015 /* TeamCollectionViewCell.swift in Sources */,
 				8BC88F4C2A10D35400A45015 /* Developer.swift in Sources */,
+				8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */,
 				8BC88F552A10F27600A45015 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
