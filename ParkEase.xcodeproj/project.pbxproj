@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4087162A11292D00B64CA6 /* GarageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4087152A11292D00B64CA6 /* GarageTableViewController.swift */; };
+		8B4087182A11295D00B64CA6 /* GarageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4087172A11295D00B64CA6 /* GarageTableViewCell.swift */; };
+		8B40871A2A11297E00B64CA6 /* Garage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4087192A11297E00B64CA6 /* Garage.storyboard */; };
+		8B40871D2A112C6900B64CA6 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40871C2A112C6900B64CA6 /* CarViewController.swift */; };
+		8B40871F2A112C7B00B64CA6 /* Car.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B40871E2A112C7B00B64CA6 /* Car.storyboard */; };
 		8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F972429F6DCB1000DE44C /* AppDelegate.swift */; };
 		8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */; };
 		8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972A29F6DCB1000DE44C /* Main.storyboard */; };
 		8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972D29F6DCB2000DE44C /* Assets.xcassets */; };
 		8B8F973129F6DCB2000DE44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */; };
-		8B8F974229F99567000DE44C /* WaitingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974129F99567000DE44C /* WaitingListTableViewController.swift */; };
-		8B8F974429F99B46000DE44C /* WaitingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974329F99B46000DE44C /* WaitingList.swift */; };
+		8B8F974229F99567000DE44C /* QueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974129F99567000DE44C /* QueueTableViewController.swift */; };
+		8B8F974429F99B46000DE44C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974329F99B46000DE44C /* Queue.swift */; };
 		8BC88F4C2A10D35400A45015 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F492A10D35400A45015 /* Developer.swift */; };
 		8BC88F4D2A10D35400A45015 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F4A2A10D35400A45015 /* Car.swift */; };
 		8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F4B2A10D35400A45015 /* Parking.swift */; };
@@ -23,11 +28,17 @@
 		8BC88F592A10F2F200A45015 /* Team.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F582A10F2F100A45015 /* Team.storyboard */; };
 		8BC88F5D2A10F4EA00A45015 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F5C2A10F4EA00A45015 /* DataStore.swift */; };
 		8BC88F602A10F62E00A45015 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F5F2A10F62E00A45015 /* MainViewController.swift */; };
-		8BC88F632A10F7BD00A45015 /* WaitingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */; };
+		8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F622A10F7BD00A45015 /* Queue.storyboard */; };
 		8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F642A10FA0300A45015 /* LoginViewController.swift */; };
+		8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F682A111F1600A45015 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B4087152A11292D00B64CA6 /* GarageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewController.swift; sourceTree = "<group>"; };
+		8B4087172A11295D00B64CA6 /* GarageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewCell.swift; sourceTree = "<group>"; };
+		8B4087192A11297E00B64CA6 /* Garage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Garage.storyboard; sourceTree = "<group>"; };
+		8B40871C2A112C6900B64CA6 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		8B40871E2A112C7B00B64CA6 /* Car.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Car.storyboard; sourceTree = "<group>"; };
 		8B8F972129F6DCB1000DE44C /* ParkEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8F972429F6DCB1000DE44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8F972629F6DCB1000DE44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,8 +46,8 @@
 		8B8F972D29F6DCB2000DE44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B8F973029F6DCB2000DE44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8F973229F6DCB2000DE44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B8F974129F99567000DE44C /* WaitingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingListTableViewController.swift; sourceTree = "<group>"; };
-		8B8F974329F99B46000DE44C /* WaitingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingList.swift; sourceTree = "<group>"; };
+		8B8F974129F99567000DE44C /* QueueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTableViewController.swift; sourceTree = "<group>"; };
+		8B8F974329F99B46000DE44C /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		8BC88F492A10D35400A45015 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		8BC88F4A2A10D35400A45015 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		8BC88F4B2A10D35400A45015 /* Parking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
@@ -46,8 +57,9 @@
 		8BC88F582A10F2F100A45015 /* Team.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Team.storyboard; sourceTree = "<group>"; };
 		8BC88F5C2A10F4EA00A45015 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8BC88F5F2A10F62E00A45015 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaitingList.storyboard; sourceTree = "<group>"; };
+		8BC88F622A10F7BD00A45015 /* Queue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
 		8BC88F642A10FA0300A45015 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8BC88F682A111F1600A45015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B4087142A1128D300B64CA6 /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				8B4087152A11292D00B64CA6 /* GarageTableViewController.swift */,
+				8B4087172A11295D00B64CA6 /* GarageTableViewCell.swift */,
+			);
+			path = Garage;
+			sourceTree = "<group>";
+		};
+		8B40871B2A112C0C00B64CA6 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				8B40871C2A112C6900B64CA6 /* CarViewController.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
 		8B8F971829F6DCB1000DE44C = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				8BC88F5E2A10F58800A45015 /* Main */,
-				8BC88F512A10F1F900A45015 /* Team */,
 				8BC88F612A10F6C800A45015 /* Login */,
-				8BC88F5A2A10F3EB00A45015 /* WaitingList */,
+				8BC88F5A2A10F3EB00A45015 /* Queue */,
+				8B4087142A1128D300B64CA6 /* Garage */,
+				8B40871B2A112C0C00B64CA6 /* Car */,
+				8BC88F512A10F1F900A45015 /* Team */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -116,8 +147,10 @@
 			children = (
 				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
 				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
+				8BC88F622A10F7BD00A45015 /* Queue.storyboard */,
+				8B4087192A11297E00B64CA6 /* Garage.storyboard */,
+				8B40871E2A112C7B00B64CA6 /* Car.storyboard */,
 				8BC88F582A10F2F100A45015 /* Team.storyboard */,
-				8BC88F622A10F7BD00A45015 /* WaitingList.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -137,7 +170,7 @@
 				8BC88F4B2A10D35400A45015 /* Parking.swift */,
 				8BC88F492A10D35400A45015 /* Developer.swift */,
 				8BC88F4F2A10F06E00A45015 /* User.swift */,
-				8B8F974329F99B46000DE44C /* WaitingList.swift */,
+				8B8F974329F99B46000DE44C /* Queue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,12 +184,12 @@
 			path = Team;
 			sourceTree = "<group>";
 		};
-		8BC88F5A2A10F3EB00A45015 /* WaitingList */ = {
+		8BC88F5A2A10F3EB00A45015 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				8B8F974129F99567000DE44C /* WaitingListTableViewController.swift */,
+				8B8F974129F99567000DE44C /* QueueTableViewController.swift */,
 			);
-			path = WaitingList;
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		8BC88F5B2A10F48000A45015 /* DataManager */ = {
@@ -179,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				8BC88F642A10FA0300A45015 /* LoginViewController.swift */,
+				8BC88F682A111F1600A45015 /* TabBarController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -242,9 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8F973129F6DCB2000DE44C /* LaunchScreen.storyboard in Resources */,
+				8B40871A2A11297E00B64CA6 /* Garage.storyboard in Resources */,
 				8BC88F592A10F2F200A45015 /* Team.storyboard in Resources */,
 				8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */,
-				8BC88F632A10F7BD00A45015 /* WaitingList.storyboard in Resources */,
+				8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */,
+				8B40871F2A112C7B00B64CA6 /* Car.storyboard in Resources */,
 				8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,17 +293,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC88F5D2A10F4EA00A45015 /* DataStore.swift in Sources */,
-				8B8F974429F99B46000DE44C /* WaitingList.swift in Sources */,
+				8B8F974429F99B46000DE44C /* Queue.swift in Sources */,
 				8BC88F4D2A10D35400A45015 /* Car.swift in Sources */,
 				8BC88F602A10F62E00A45015 /* MainViewController.swift in Sources */,
+				8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
 				8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */,
 				8BC88F502A10F06E00A45015 /* User.swift in Sources */,
-				8B8F974229F99567000DE44C /* WaitingListTableViewController.swift in Sources */,
+				8B8F974229F99567000DE44C /* QueueTableViewController.swift in Sources */,
+				8B4087162A11292D00B64CA6 /* GarageTableViewController.swift in Sources */,
 				8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */,
 				8BC88F572A10F2AC00A45015 /* TeamCollectionViewCell.swift in Sources */,
 				8BC88F4C2A10D35400A45015 /* Developer.swift in Sources */,
+				8B40871D2A112C6900B64CA6 /* CarViewController.swift in Sources */,
 				8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */,
+				8B4087182A11295D00B64CA6 /* GarageTableViewCell.swift in Sources */,
 				8BC88F552A10F27600A45015 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

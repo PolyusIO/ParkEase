@@ -1,5 +1,5 @@
 //
-//  WaitingListTableViewController.swift
+//  QueueTableViewController.swift
 //  ParkEase
 //
 //  Created by Сергей Поляков on 26.04.2023.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class WaitingListTableViewController: UITableViewController {
+final class QueueTableViewController: UITableViewController {
     
     // MARK: - Private Properties
     private let reuseIdentifier = "waitingList"
-    private var waitingList: [WaitingList] = []
+    private var waitingList: [Queue] = []
     
     
     // MARK: - Override Methods
@@ -31,7 +31,7 @@ final class WaitingListTableViewController: UITableViewController {
             if waitingList.count < 5 {
                 print("The next car will be given out in \(randomTime) seconds")
                 waitingList.append(
-                    WaitingList(
+                    Queue(
                         dispatchTime: dispatchTime,
                         operationTime: operationTime,
                         timeToCompletion: operationTime,
@@ -48,10 +48,10 @@ final class WaitingListTableViewController: UITableViewController {
         let dispatchTime = DispatchTime.now() + 1
         DispatchQueue.main.asyncAfter(deadline: dispatchTime) { [self] in
             if waitingList.first?.timeToCompletion ?? 0 > 0 {
-                let reduce = waitingList.first?.timeToCompletion ?? 0
+                let _ = waitingList.first?.timeToCompletion ?? 0
                 let operationTime = Int.random(in: 5...10)
                 waitingList.append(
-                    WaitingList(
+                    Queue(
                         dispatchTime: dispatchTime,
                         operationTime: operationTime,
                         timeToCompletion: operationTime,
@@ -70,7 +70,7 @@ final class WaitingListTableViewController: UITableViewController {
 }
 
 // MARK: - Table view data source
-extension WaitingListTableViewController {
+extension QueueTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         2
@@ -102,7 +102,7 @@ extension WaitingListTableViewController {
 
 
 // MARK: - Table View Delegate
-extension WaitingListTableViewController {
+extension QueueTableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             

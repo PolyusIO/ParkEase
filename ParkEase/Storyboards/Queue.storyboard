@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Waiting List Table View Controller-->
+        <!--Queue-->
         <scene sceneID="Vyk-h0-nxK">
             <objects>
-                <tableViewController storyboardIdentifier="waitingListVC" id="6xo-86-YfM" customClass="WaitingListTableViewController" customModule="ParkEase" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="queueVC" id="6xo-86-YfM" customClass="QueueTableViewController" customModule="ParkEase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Pa7-g7-b1x">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +30,8 @@
                             <outlet property="delegate" destination="6xo-86-YfM" id="aTK-Dz-3u8"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Queue" image="list.bullet.rectangle.fill" catalog="system" id="EMY-7C-USS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axi-S1-Lxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

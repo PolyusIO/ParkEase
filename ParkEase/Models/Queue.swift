@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WaitingList {
+struct Queue {
     let dispatchTime: DispatchTime
     let operationTime: Int
     let timeToCompletion: Int
