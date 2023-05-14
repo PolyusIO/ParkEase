@@ -15,9 +15,10 @@
 		8B8F973129F6DCB2000DE44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */; };
 		8B8F974229F99567000DE44C /* WaitingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974129F99567000DE44C /* WaitingListTableViewController.swift */; };
 		8B8F974429F99B46000DE44C /* WaitingListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F974329F99B46000DE44C /* WaitingListModel.swift */; };
-		8BC88F4C2A10D35400A45015 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F492A10D35400A45015 /* User.swift */; };
+		8BC88F4C2A10D35400A45015 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F492A10D35400A45015 /* Developer.swift */; };
 		8BC88F4D2A10D35400A45015 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F4A2A10D35400A45015 /* Car.swift */; };
 		8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F4B2A10D35400A45015 /* Parking.swift */; };
+		8BC88F502A10F06E00A45015 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F4F2A10F06E00A45015 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,10 @@
 		8B8F973229F6DCB2000DE44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8F974129F99567000DE44C /* WaitingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingListTableViewController.swift; sourceTree = "<group>"; };
 		8B8F974329F99B46000DE44C /* WaitingListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingListModel.swift; sourceTree = "<group>"; };
-		8BC88F492A10D35400A45015 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BC88F492A10D35400A45015 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		8BC88F4A2A10D35400A45015 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		8BC88F4B2A10D35400A45015 /* Parking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		8BC88F4F2A10F06E00A45015 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +118,8 @@
 			children = (
 				8BC88F4A2A10D35400A45015 /* Car.swift */,
 				8BC88F4B2A10D35400A45015 /* Parking.swift */,
-				8BC88F492A10D35400A45015 /* User.swift */,
+				8BC88F492A10D35400A45015 /* Developer.swift */,
+				8BC88F4F2A10F06E00A45015 /* User.swift */,
 				8B8F974329F99B46000DE44C /* WaitingListModel.swift */,
 			);
 			path = Models;
@@ -198,9 +201,10 @@
 				8BC88F4D2A10D35400A45015 /* Car.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
 				8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */,
+				8BC88F502A10F06E00A45015 /* User.swift in Sources */,
 				8B8F974229F99567000DE44C /* WaitingListTableViewController.swift in Sources */,
 				8B8F972729F6DCB1000DE44C /* SceneDelegate.swift in Sources */,
-				8BC88F4C2A10D35400A45015 /* User.swift in Sources */,
+				8BC88F4C2A10D35400A45015 /* Developer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
