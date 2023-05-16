@@ -49,6 +49,7 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="enterButtonTapped" destination="mri-nD-Fcp" eventType="touchUpInside" id="4wJ-ms-PNO"/>
                                     <segue destination="7x9-sS-V7h" kind="presentation" modalPresentationStyle="fullScreen" id="R71-tK-ApT"/>
                                 </connections>
                             </button>
@@ -67,7 +68,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="qtq-Ax-mCS" id="A97-au-NPK"/>
+                        <outlet property="enterButton" destination="qtq-Ax-mCS" id="A97-au-NPK"/>
+                        <outlet property="loginTextField" destination="KYr-Q9-uLg" id="pcS-d3-7wr"/>
+                        <outlet property="passwordTextField" destination="oBd-du-uk6" id="ElN-0t-KEd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzx-EH-hIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
