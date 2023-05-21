@@ -55,8 +55,15 @@ extension LoginViewController {
         let okAlert = UIAlertAction(title: "OK", style: .default) { _ in
             textField.text = ""
         }
+        let registrationAlert = UIAlertAction(title: "Регистрация", style: .default) { _ in
+            let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
+            let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
+            
+            self.present(signUpVC, animated: true)
+        }
         
         present(alert, animated: true)
         alert.addAction(okAlert)
+        alert.addAction(registrationAlert)
     }
 }
