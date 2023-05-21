@@ -42,10 +42,10 @@ struct Developer {
                 bio: ""
             ),
             Developer(
-                name: "Artemy",
-                surname: "Derik",
-                charpter: "",
-                age: 30,
+                name: "Артемий",
+                surname: "Дериглазов",
+                charpter: "Login Page",
+                age: 21,
                 photo: "Artemy",
                 githubLink: "artemyderik",
                 bio: ""
