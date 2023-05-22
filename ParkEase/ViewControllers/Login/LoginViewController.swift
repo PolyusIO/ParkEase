@@ -7,40 +7,49 @@
 
 import UIKit
 
+protocol SignUpViewControllerDelegate {
+    func setNewValues(of users: [User])
+}
+
 class LoginViewController: UIViewController {
-    
-    //MARK: Private properties
-    private let user = User.getUserData()
+
     
     //MARK: IB Outlets
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var enterButton: UIButton!
     
+    //MARK: Private properties
+    private var users = User.getUsers()
+
     //MARK: Override Methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override  func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let signUpVC = segue.destination as? SignUpViewController else { return }
+        signUpVC.delegate = self
+    }
+    
     //MARK: IB Actions
     @IBAction func enterButtonTapped() {
-        guard loginTextField.text == user.login, passwordTextField.text == user.password else {
-            showAlert(
-                with: "ОЙ!",
-                and: "Неправильный логин или пароль. Попробуйте еще раз.",
-                textField: passwordTextField
-            )
-            return
+        for user in users {
+            guard user.login == loginTextField.text  && user.password == passwordTextField.text 
+            else {
+                showAlert(
+                    with: "ОЙ!",
+                    and: "Неправильный логин или пароль. Попробуйте еще раз.",
+                    textField: passwordTextField
+                )
+                return
+            }
         }
     }
 }
 
-//MARK: Extension
+//MARK: Show Alert Method
 extension LoginViewController {
     private func showAlert(
         with title: String,
@@ -65,5 +74,12 @@ extension LoginViewController {
         present(alert, animated: true)
         alert.addAction(okAlert)
         alert.addAction(registrationAlert)
+    }
+}
+
+//MARK: SignUpViewControllerDelegate
+extension LoginViewController: SignUpViewControllerDelegate {
+    func setNewValues(of users: [User]) {
+        self.users = users
     }
 }
