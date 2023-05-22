@@ -84,6 +84,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI7-a9-641">
                                 <rect key="frame" x="140.33333333333334" y="436.66666666666669" width="109.33333333333334" height="34.333333333333314"/>
+                                <color key="tintColor" red="0.2588235438" green="0.46666666870000001" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Сохранить"/>
                                 <connections>
