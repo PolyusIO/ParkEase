@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet var passwordSecondTextField: UITextField!
     
     //MARK: Public properties
-    var users = User.getUsers()
+    var users: [User]!
     var delegate: SignUpViewControllerDelegate!
     
     //MARK: OverrideMethods
@@ -28,9 +28,14 @@ class SignUpViewController: UIViewController {
     //MARK: IB Actions
     @IBAction func saveButtonPressed() {
         if loginTextField.text != "" && passwordFirstTextField.text != "" && parkKeyTextField.text != "" && passwordFirstTextField.text == passwordSecondTextField.text {
-            let newUser = User(login: loginTextField.text ?? "", password: passwordFirstTextField.text ?? "", parkKey: parkKeyTextField.text ?? "", car: [])
+            let newUser = User(
+                login: loginTextField.text ?? "",
+                password: passwordFirstTextField.text ?? "",
+                parkKey: parkKeyTextField.text ?? "",
+                car: []
+            )
             users.append(newUser)
-            delegate.setNewValues(of: users)
+            delegate.addNewUser(of: users)
             dismiss(animated: true)
         } else {
             showAlert(with: "Упс!", and: "Будьте внимательнее", textField: passwordFirstTextField)

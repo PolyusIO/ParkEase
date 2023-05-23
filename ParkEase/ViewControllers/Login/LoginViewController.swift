@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SignUpViewControllerDelegate {
-    func setNewValues(of users: [User])
+    func addNewUser(of users: [User])
 }
 
 class LoginViewController: UIViewController {
@@ -31,20 +31,38 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let signUpVC = segue.destination as? SignUpViewController else { return }
         signUpVC.delegate = self
+        signUpVC.users = users
     }
     
     //MARK: IB Actions
     @IBAction func enterButtonTapped() {
+        
+        guard let login = loginTextField.text else {
+            loginTextField.backgroundColor = .red
+            return
+        }
+        guard let password = passwordTextField.text else {
+            passwordTextField.backgroundColor = .red
+            return
+        }
+        
+        var isUserValid = false
+        
         for user in users {
-            guard user.login == loginTextField.text  && user.password == passwordTextField.text 
-            else {
-                showAlert(
-                    with: "ОЙ!",
-                    and: "Неправильный логин или пароль. Попробуйте еще раз.",
-                    textField: passwordTextField
-                )
-                return
+            if login == user.login  && password == user.password {
+                isUserValid = true
             }
+        }
+        
+        if isUserValid {
+            performSegue(withIdentifier: "tabBarVC", sender: nil)
+        }
+        else {
+            showAlert(
+                with: "ОЙ!",
+                and: "Неправильный логин или пароль. Попробуйте еще раз.",
+                textField: passwordTextField
+            )
         }
     }
 }
@@ -79,7 +97,7 @@ extension LoginViewController {
 
 //MARK: SignUpViewControllerDelegate
 extension LoginViewController: SignUpViewControllerDelegate {
-    func setNewValues(of users: [User]) {
+    func addNewUser(of users: [User]) {
         self.users = users
     }
 }

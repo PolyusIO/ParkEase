@@ -31,6 +31,8 @@
 		8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F622A10F7BD00A45015 /* Queue.storyboard */; };
 		8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F642A10FA0300A45015 /* LoginViewController.swift */; };
 		8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F682A111F1600A45015 /* TabBarController.swift */; };
+		8BD5AEC82A1CAB7300BF3D81 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD5AEC72A1CAB7300BF3D81 /* SignUpViewController.swift */; };
+		8BD5AECA2A1CAB9700BF3D81 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD5AEC92A1CAB9700BF3D81 /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		8BC88F622A10F7BD00A45015 /* Queue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
 		8BC88F642A10FA0300A45015 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BC88F682A111F1600A45015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8BD5AEC72A1CAB7300BF3D81 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8BD5AEC92A1CAB9700BF3D81 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		8B8F973929F6DD3C000DE44C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BD5AEC62A1CAB7300BF3D81 /* SignUp */,
 				8BC88F5E2A10F58800A45015 /* Main */,
 				8BC88F612A10F6C800A45015 /* Login */,
 				8BC88F5A2A10F3EB00A45015 /* Queue */,
@@ -145,6 +150,7 @@
 		8B8F973A29F6DD51000DE44C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8BD5AEC92A1CAB9700BF3D81 /* SignUp.storyboard */,
 				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
 				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
 				8BC88F622A10F7BD00A45015 /* Queue.storyboard */,
@@ -217,6 +223,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8BD5AEC62A1CAB7300BF3D81 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8BD5AEC72A1CAB7300BF3D81 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,6 +295,7 @@
 				8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */,
 				8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */,
 				8B40871F2A112C7B00B64CA6 /* Car.storyboard in Resources */,
+				8BD5AECA2A1CAB9700BF3D81 /* SignUp.storyboard in Resources */,
 				8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +313,7 @@
 				8BC88F602A10F62E00A45015 /* MainViewController.swift in Sources */,
 				8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
+				8BD5AEC82A1CAB7300BF3D81 /* SignUpViewController.swift in Sources */,
 				8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */,
 				8BC88F502A10F06E00A45015 /* User.swift in Sources */,
 				8B8F974229F99567000DE44C /* QueueTableViewController.swift in Sources */,
