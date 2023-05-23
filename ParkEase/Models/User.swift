@@ -22,11 +22,7 @@ struct User {
         )
     }
     static func getUsers() -> [User] {
-//        var users = [User]()
-//        let user1 = User(login: "alex", password: "pass", parkKey: "8", car: [])
-//        users.append(user1)
-//        return users
-        [User(login: "alex", password: "pass", parkKey: "8", car: []),
+        [ User(login: "alex", password: "pass", parkKey: "8", car: []),
         ]
     }
 }
