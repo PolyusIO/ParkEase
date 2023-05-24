@@ -28,6 +28,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let signUpVC = segue.destination as? SignUpViewController else { return }
         signUpVC.delegate = self
