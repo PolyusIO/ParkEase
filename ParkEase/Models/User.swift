@@ -6,6 +6,7 @@
 //
 
 //Пользователь приложения
+
 struct User {
     let login: String
     let password: String
@@ -20,4 +21,10 @@ struct User {
             car: []
         )
     }
+    static func getUsers() -> [User] {
+        [
+            User(login: "alex", password: "pass", parkKey: "8", car: [])
+        ]
+    }
 }
+
