@@ -25,6 +25,11 @@ class SignUpViewController: UIViewController {
         view.endEditing(true)
     }
     
+    override func viewDidLoad() {
+        loginTextField.delegate = self
+    }
+    
+    
     //MARK: IB Actions
     @IBAction func saveButtonPressed() {
         if loginTextField.text != "" && passwordFirstTextField.text != "" && parkKeyTextField.text != "" && passwordFirstTextField.text == passwordSecondTextField.text {
@@ -72,5 +77,16 @@ extension SignUpViewController {
     }
 }
 
-
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.backgroundColor = .yellow
+        print("textFieldDidBeginEditing")
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.backgroundColor = .clear
+        print("textFieldDidBeginEditing")
+    }
+    
+}
 
