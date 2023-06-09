@@ -89,7 +89,8 @@ extension LoginViewController {
         }
         let registrationAlert = UIAlertAction(title: "Регистрация", style: .default) { _ in
             let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
-            let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
+            guard let signUpVC = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController else { return }
+            signUpVC.delegate = self
             
             self.present(signUpVC, animated: true)
         }
@@ -118,17 +119,16 @@ extension LoginViewController {
     
     private func turnToWhite(_ textField: UITextField) {
         if textField.isEditing {
-            textField.backgroundColor = .white
             textField.layer.borderWidth = 0
+            textField.layer.masksToBounds = false
         }
     }
     
     private func reportInvalidInputOf(_ textField: UITextField) {
-        textField.layer.borderWidth = 1.5
-        textField.layer.cornerRadius = textField.frame.width / 50
+        textField.layer.borderWidth = 1
+        textField.layer.cornerRadius = textField.frame.width / 40
         textField.layer.borderColor = UIColor(red: 1, green: 0.3, blue: 0.3, alpha: 1).cgColor
-        
-        textField.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.9, alpha: 0.9)
+        textField.layer.masksToBounds = true
     
         shake(the: textField)
     }
