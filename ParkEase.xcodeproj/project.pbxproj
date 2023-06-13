@@ -33,6 +33,8 @@
 		8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC88F622A10F7BD00A45015 /* Queue.storyboard */; };
 		8BC88F652A10FA0300A45015 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F642A10FA0300A45015 /* LoginViewController.swift */; };
 		8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC88F682A111F1600A45015 /* TabBarController.swift */; };
+		948488672A19EFC900009FA6 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948488662A19EFC900009FA6 /* SignUp.storyboard */; };
+		9484886C2A19F09100009FA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9484886B2A19F09100009FA6 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		8BC88F622A10F7BD00A45015 /* Queue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Queue.storyboard; sourceTree = "<group>"; };
 		8BC88F642A10FA0300A45015 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BC88F682A111F1600A45015 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		948488662A19EFC900009FA6 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		9484886B2A19F09100009FA6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +148,7 @@
 		8B8F973929F6DD3C000DE44C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B0DD3EC2A32264B0001766A /* SignUp */,
+				9484886A2A19F02F00009FA6 /* SignUp */,
 				8BC88F5E2A10F58800A45015 /* Main */,
 				8BC88F612A10F6C800A45015 /* Login */,
 				8BC88F5A2A10F3EB00A45015 /* Queue */,
@@ -160,6 +164,7 @@
 			children = (
 				8B0DD3EF2A3226850001766A /* SignUp.storyboard */,
 				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
+				948488662A19EFC900009FA6 /* SignUp.storyboard */,
 				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
 				8BC88F622A10F7BD00A45015 /* Queue.storyboard */,
 				8B4087192A11297E00B64CA6 /* Garage.storyboard */,
@@ -231,6 +236,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9484886A2A19F02F00009FA6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9484886B2A19F09100009FA6 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,7 +308,7 @@
 				8B8F972E29F6DCB2000DE44C /* Assets.xcassets in Resources */,
 				8BC88F632A10F7BD00A45015 /* Queue.storyboard in Resources */,
 				8B40871F2A112C7B00B64CA6 /* Car.storyboard in Resources */,
-				8B0DD3F02A3226850001766A /* SignUp.storyboard in Resources */,
+				948488672A19EFC900009FA6 /* SignUp.storyboard in Resources */,
 				8B8F972C29F6DCB1000DE44C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +326,7 @@
 				8BC88F602A10F62E00A45015 /* MainViewController.swift in Sources */,
 				8BC88F692A111F1600A45015 /* TabBarController.swift in Sources */,
 				8B8F972529F6DCB1000DE44C /* AppDelegate.swift in Sources */,
-				8B0DD3EE2A32264B0001766A /* SignUpViewController.swift in Sources */,
+				9484886C2A19F09100009FA6 /* SignUpViewController.swift in Sources */,
 				8BC88F4E2A10D35400A45015 /* Parking.swift in Sources */,
 				8BC88F502A10F06E00A45015 /* User.swift in Sources */,
 				8B8F974229F99567000DE44C /* QueueTableViewController.swift in Sources */,
@@ -471,7 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5JLFFB6Q5M;
+				DEVELOPMENT_TEAM = 6PZ2VM529M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ParkEase/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,12 +492,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = polyus.ParkEase;
+				PRODUCT_BUNDLE_IDENTIFIER = artemyderik.ParkEase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -502,7 +516,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5JLFFB6Q5M;
+				DEVELOPMENT_TEAM = 6PZ2VM529M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ParkEase/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -510,12 +524,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = polyus.ParkEase;
+				PRODUCT_BUNDLE_IDENTIFIER = artemyderik.ParkEase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

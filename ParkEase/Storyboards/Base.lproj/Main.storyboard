@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="vVG-ln-ZSS">
-                                <rect key="frame" x="59" y="216.66666666666663" width="272" height="89"/>
+                                <rect key="frame" x="59" y="216.66666666666652" width="272" height="89"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYr-Q9-uLg">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="34"/>
@@ -41,14 +41,14 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkEaseLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="hTa-wr-Rba">
-                                <rect key="frame" x="113.66666666666667" y="376" width="162.66666666666663" height="92"/>
+                                <rect key="frame" x="113.66666666666669" y="376" width="162.66666666666663" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="S6i-oX-9fO"/>
                                     <constraint firstAttribute="height" constant="92" id="bWb-Bn-5mK"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtq-Ax-mCS">
-                                <rect key="frame" x="164.33333333333334" y="326.66666666666669" width="61.333333333333343" height="28.333333333333314"/>
+                                <rect key="frame" x="164.33333333333334" y="326.66666666666674" width="61.333333333333343" height="28.333333333333258"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Войти">
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6j-uP-DsA">
-                                <rect key="frame" x="128" y="488" width="134" height="29.666666666666629"/>
+                                <rect key="frame" x="128" y="488" width="134" height="29.666666666666742"/>
                                 <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Создать аккаунт">
@@ -126,7 +126,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AV-RU-Rwm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="420"/>
+            <point key="canvasLocation" x="-174" y="419"/>
         </scene>
         <!--teamVC-->
         <scene sceneID="LSD-3x-F81">
@@ -136,7 +136,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXN-XS-QOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="420"/>
+            <point key="canvasLocation" x="239" y="419"/>
         </scene>
         <!--garageVC-->
         <scene sceneID="r9n-pD-b6a">
@@ -146,7 +146,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPS-Jf-Rug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="420"/>
+            <point key="canvasLocation" x="15" y="419"/>
         </scene>
     </scenes>
     <resources>
