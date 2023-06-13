@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0DD3EE2A32264B0001766A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0DD3ED2A32264B0001766A /* SignUpViewController.swift */; };
+		8B0DD3F02A3226850001766A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0DD3EF2A3226850001766A /* SignUp.storyboard */; };
 		8B4087162A11292D00B64CA6 /* GarageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4087152A11292D00B64CA6 /* GarageTableViewController.swift */; };
 		8B4087182A11295D00B64CA6 /* GarageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4087172A11295D00B64CA6 /* GarageTableViewCell.swift */; };
 		8B40871A2A11297E00B64CA6 /* Garage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4087192A11297E00B64CA6 /* Garage.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0DD3ED2A32264B0001766A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8B0DD3EF2A3226850001766A /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		8B4087152A11292D00B64CA6 /* GarageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewController.swift; sourceTree = "<group>"; };
 		8B4087172A11295D00B64CA6 /* GarageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTableViewCell.swift; sourceTree = "<group>"; };
 		8B4087192A11297E00B64CA6 /* Garage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Garage.storyboard; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0DD3EC2A32264B0001766A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8B0DD3ED2A32264B0001766A /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		8B4087142A1128D300B64CA6 /* Garage */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 		8B8F973A29F6DD51000DE44C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8B0DD3EF2A3226850001766A /* SignUp.storyboard */,
 				8B8F972F29F6DCB2000DE44C /* LaunchScreen.storyboard */,
 				948488662A19EFC900009FA6 /* SignUp.storyboard */,
 				8B8F972A29F6DCB1000DE44C /* Main.storyboard */,
